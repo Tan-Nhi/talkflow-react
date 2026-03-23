@@ -1,5 +1,10 @@
 
-const HeaderPage = () => {
+interface Props {
+    handleOpenAdd: () => void
+}
+
+const HeaderPage = (Props: Props) => {
+    const { handleOpenAdd } = Props;
     return <>
         <header className="header">
             <div className="header-left">
@@ -8,7 +13,7 @@ const HeaderPage = () => {
                 </div>
             </div>
             <p className="header-sub">Quản lý công việc cá nhân</p>
-            <div className="btn-add">
+            <div className="btn-add" onClick={handleOpenAdd}>
                 <span>+</span> Thêm công việc
             </div>
         </header>

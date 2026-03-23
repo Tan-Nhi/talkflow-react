@@ -1,25 +1,37 @@
+import { useState } from 'react'
 import './App.css'
 import FilterBar from './components/filterbar'
-import HeaderPage from './components/Header'
+import HeaderPage from './components/header'
 import StatsBar from './components/statsbar'
 import TaskBoard from './components/taskboard'
 import TaskModal from './components/taskmodal'
 
 
+
 const App = () => {
 
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
 
+  const handleOpenAdd = () => {
+    setModalOpen(true);
+  }
   return (
     <>
       <div className="app">
         <div className="bg-grid"></div>
         <div className="container">
-          <HeaderPage />
+          <HeaderPage
+            handleOpenAdd={handleOpenAdd}
+          />
           <StatsBar />
           <FilterBar />
           <TaskBoard />
         </div>
-        {/* <TaskModal /> */}
+        {modalOpen && (
+          <TaskModal
+            onClose={() => { setModalOpen(false) }}
+          />
+        )}
       </div>
     </>
   )

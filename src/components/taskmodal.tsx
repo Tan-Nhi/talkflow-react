@@ -1,12 +1,17 @@
 
-const TaskModal = () => {
+interface Props {
+    onClose: () => void
+}
+
+const TaskModal = (Props: Props) => {
+    const { onClose } = Props;
     return (
         <>
-            <div className="modal-overlay" >
+            <div className="modal-overlay" onClick={e => e.target === e.currentTarget && onClose()}>
                 <div className="modal">
                     <div className="modal-header">
                         <h2>Thêm công việc mới</h2>
-                        <button className="modal-close">×</button>
+                        <button className="modal-close" onClick={onClose}>×</button>
                     </div>
                     <div className="modal-body">
                         <div className="field">
@@ -53,7 +58,7 @@ const TaskModal = () => {
                         </div>
                     </div>
                     <div className="modal-footer">
-                        <button className="btn-cancel" >Hủy</button>
+                        <button className="btn-cancel" onClick={onClose} >Hủy</button>
                         <button className="btn-save">
                             Thêm mới
                         </button>
