@@ -1,5 +1,10 @@
 {
-  "name": "taskflow-react",
+  "author": {
+    "name": "Tấn Nhi",
+    "email": "nguyentannhi2003bh@gmail.com",
+    "phone": "0768058406",
+    "Website": "https://portfolio-tannhi.xyz"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
