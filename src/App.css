@@ -692,3 +692,13 @@ select {
   box-shadow: 0 0 24px rgba(108, 99, 255, 0.5);
 }
 /* Modal-end  */
+
+/* Theme  */
+select option {
+  background: var(--bg3);
+  color: var(--text);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+}
+/* Theme-end  */

@@ -1,4 +1,4 @@
-import type { ITask } from "../modal/type"
+import type { ITask } from "../model/type"
 
 const KEY = 'taskflow_tasks'
 

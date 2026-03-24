@@ -8,7 +8,7 @@ export interface ITask {
     status: TaskStatus
     deadline?: string
     priority: 'low' | 'medium' | 'high'
-    createdAt: string
+    createAt?: string
 }
 
 export interface IStats {
@@ -21,4 +21,13 @@ export interface IStats {
 export interface IFilterState {
     search: string
     status: TaskStatus | 'all'
+}
+
+export interface TFormState {
+    title: string
+    description: string
+    status: TaskStatus
+    deadline: string
+    priority: 'low' | 'medium' | 'high'
+    error: string
 }
