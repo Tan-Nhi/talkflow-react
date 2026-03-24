@@ -1,7 +1,7 @@
 
-type TaskStatus = 'todo' | 'inprogress' | 'done'
+export type TaskStatus = 'todo' | 'inprogress' | 'done'
 
-interface ITask {
+export interface ITask {
     id: string
     title: string
     description?: string
@@ -11,12 +11,14 @@ interface ITask {
     createdAt: string
 }
 
-interface IStats {
+export interface IStats {
     total: number
     done: number
     overdue: number
     dueSoon: number
 }
 
-
-export { TaskStatus, ITask, IStats };
+export interface IFilterState {
+    search: string
+    status: TaskStatus | 'all'
+}

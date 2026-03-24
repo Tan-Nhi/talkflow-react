@@ -5,17 +5,19 @@ import HeaderPage from './components/header'
 import StatsBar from './components/statsbar'
 import TaskBoard from './components/taskboard'
 import TaskModalCreate from './components/taskmodal'
+import type { ITask } from './modal/type'
 
 
 
 const App = () => {
 
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [tasks, setTasks] = useState<string>("")
+  const [tasks, setTasks] = useState<ITask[]>();
 
   const handleOpenAdd = () => {
     setModalOpen(true);
   }
+
   return (
     <>
       <div className="app">
