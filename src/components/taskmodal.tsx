@@ -3,7 +3,7 @@ interface Props {
     onClose: () => void
 }
 
-const TaskModal = (Props: Props) => {
+const TaskModalCreate = (Props: Props) => {
     const { onClose } = Props;
     return (
         <>
@@ -69,4 +69,4 @@ const TaskModal = (Props: Props) => {
     )
 }
 
-export default TaskModal
+export default TaskModalCreate
