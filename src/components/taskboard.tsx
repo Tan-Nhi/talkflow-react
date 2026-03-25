@@ -11,7 +11,7 @@ interface Props {
 const columns: { status: TaskStatus; label: string; icon: string }[] = [
     { status: 'todo', label: 'TODO', icon: '01' },
     { status: 'inprogress', label: 'In Progress', icon: '02' },
-    { status: 'todo', label: 'TODO', icon: '03' },
+    { status: 'done', label: 'TODO', icon: '03' },
 ]
 
 const TaskBoard = (Props: Props) => {
