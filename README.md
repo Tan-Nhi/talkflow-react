@@ -13,22 +13,40 @@
 
 ### Các bước
 
-1. **Clone repo**
+**1. Clone repo**
 
-   git clone https://github.com/Tan-Nhi/talkflow-react.git
-   cd taskflow-react
+```bash
+git clone https://github.com/Tan-Nhi/talkflow-react.git
+cd talkflow-react
+```
 
-2. **Cài dependencies**
+**2. Cài dependencies**
 
-   npm install
+```bash
+npm install
+```
 
-3. **Chạy development server**
-   npm run dev
-   => App chạy tại http://localhost:3000
-4. **Buid production**
-   npm run build
-5. **Chạy production server**
-   npm run preview
+**3. Chạy development server**
+
+```bash
+npm run dev
+```
+
+App chạy tại http://localhost:3000
+
+**4. Build production**
+
+```bash
+npm run build
+```
+
+**5. Chạy production server**
+
+```bash
+npm run preview
+```
+
+---
 
 ---
 
