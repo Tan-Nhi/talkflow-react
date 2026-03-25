@@ -34,24 +34,25 @@
 
 ## Cấu trúc thư mục
 
+```
 taskflow-react/
 ├── src/
-│ ├── components/
-│ │ ├── header.tsx # Logo + nút thêm task
-│ │ ├── statsbar.tsx # Thống kê nhanh + progress bar
-│ │ ├── Fflterbar.tsx # Tìm kiếm + lọc theo status
-│ │ ├── taskboard.tsx # Kanban 3 cột
-│ │ ├── taskcard.tsx # Card hiển thị từng task
-│ │ └── taskmodal.tsx # Modal thêm/sửa task
-│ ├── utils/
-│ │ ├── storage.ts # localStorage helpers
-│ │ └── date.ts # Xử lý deadline, overdue, due soon
-│ ├── model
-| | ├── type.ts # TypeScript interfaces & types
-│ ├── App.tsx # Root component, state management
-│ ├── App.css # Toàn bộ CSS (design system)
-│ ├── main.tsx # Entry point
-│ └── index.css # Global reset
+│   ├── components/
+│   │   ├── header.tsx        # Logo + nút thêm task
+│   │   ├── statsbar.tsx      # Thống kê nhanh + progress bar
+│   │   ├── FilterBar.tsx     # Tìm kiếm + lọc theo status
+│   │   ├── taskboard.tsx     # Kanban 3 cột
+│   │   ├── taskcard.tsx      # Card hiển thị từng task
+│   │   └── taskmodal.tsx     # Modal thêm/sửa task
+│   ├── utils/
+│   │   ├── storage.ts        # localStorage helpers
+│   │   └── date.ts           # Xử lý deadline, overdue, due soon
+│   ├── model/
+│   │   └── type.ts           # TypeScript interfaces & types
+│   ├── App.tsx               # Root component, state management
+│   ├── App.css               # Toàn bộ CSS (design system)
+│   ├── main.tsx              # Entry point
+│   └── index.css             # Global reset
 ├── index.html
 ├── vite.config.ts
 ├── tsconfig.json
@@ -59,6 +60,7 @@ taskflow-react/
 ├── tsconfig.node.json
 ├── package.json
 └── README.md
+```
 
 ---
 
