@@ -702,3 +702,51 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0.5);
 }
 /* Theme-end  */
+
+/* ─── RESPONSIVE ────────────────────────────── */
+@media (max-width: 900px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+  .stats-bar {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+  .stat-divider {
+    display: none;
+  }
+  .stat-item {
+    flex: 1;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .btn-add {
+    width: 100%;
+    justify-content: center;
+  }
+  .filter-bar {
+    flex-direction: column;
+  }
+  .status-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+  .stats-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat-progress-item {
+    grid-column: 1 / -1;
+  }
+}
